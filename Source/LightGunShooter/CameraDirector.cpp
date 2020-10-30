@@ -40,11 +40,11 @@ void ACameraDirector::Tick(float DeltaTime)
                 // Cut instantly to camera one.
                 OurPlayerController->SetViewTarget(CameraOne);
             }
-            else if ((OurPlayerController->GetViewTarget() != CameraTwo) && (CameraTwo != nullptr))
-            {
-                // Blend smoothly to camera two.
-                OurPlayerController->SetViewTargetWithBlend(CameraTwo, SmoothBlendTime);
-            }
+            //else if ((OurPlayerController->GetViewTarget() != CameraTwo) && (CameraTwo != nullptr))
+            //{
+            //    // Blend smoothly to camera two.
+            //    OurPlayerController->SetViewTargetWithBlend(CameraTwo, SmoothBlendTime);
+            //}
         }
     }
 }
